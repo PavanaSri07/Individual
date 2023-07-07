@@ -1,0 +1,139 @@
+/* Base styles for desktop view */
+
+header {
+    width: 100%;
+    background-color: #d31b1b;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    width: 182px;
+    height: 55px;
+    margin: 0 0 0 20px;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-menu li {
+    position: relative;
+    margin-right: 20px;
+}
+
+.nav-menu a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-menu a:hover {
+    color: #1968bc;
+}
+
+
+/* Styles for Dropdown */
+
+.nav-menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-menu ul li:hover ul {
+    display: block;
+}
+
+.nav-menu ul ul li {
+    width: 100%;
+    white-space: nowrap;
+}
+
+.nav-menu ul ul a {
+    padding: 10px;
+    display: block;
+}
+
+
+/* Mobile view styles */
+
+@media screen and (max-width: 768px) {
+    .logo {
+        margin-left: 0;
+    }
+    .nav-menu {
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        z-index: 999;
+        display: none;
+    }
+    .nav-menu ul {
+        flex-direction: column;
+    }
+    .nav-menu li {
+        margin-right: 0;
+        width: 100%;
+    }
+    .nav-menu a {
+        padding: 10px 20px;
+        border-bottom: 1px solid #f0f0f0;
+    }
+    .nav-menu li:last-child a {
+        border-bottom: none;
+    }
+    .nav-menu .drop-down a {
+        position: relative;
+    }
+    .nav-menu .drop-down ul {
+        position: static;
+        display: none;
+        opacity: 1;
+        visibility: visible;
+    }
+    .nav-menu .drop-down:hover ul {
+        display: block;
+    }
+    .nav-menu .drop-down ul li {
+        width: 100%;
+    }
+    .nav-menu .drop-down ul a {
+        padding-left: 30px;
+    }
+    .nav-menu.active {
+        display: flex;
+    }
+}

@@ -1,0 +1,143 @@
+.contact-section1 .col-lg-4 {
+    flex-basis: 33.33%;
+}
+
+@media screen and (max-width: 767px) {
+    .contact-section1 .col-lg-4 {
+        flex-basis: 100%;
+    }
+}
+
+.site-vist1 li {
+    width: 50%;
+    float: left;
+    list-style: square;
+}
+
+@media screen and (max-width: 767px) {
+    .site-vist1 li {
+        width: 100%;
+    }
+}
+
+.contact-section1 .form-control {
+    height: auto;
+    box-shadow: 4px 0px 6px 0 rgb(46 61 73 / 15%);
+    border-radius: 4px;
+    padding: 8px 10px;
+    margin-bottom: 10px;
+    border: 1px solid #e8e8e8;
+}
+
+.contact-section1 form.php-email-form {
+    background: #f7f7f7;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.site-vist1 {
+    padding-left: 1rem;
+}
+
+.form-container {
+    max-width: 500px;
+    margin: 10px auto;
+    background: #ada2a2;
+    padding: 30px;
+    text-align: center;
+    position: relative;
+}
+
+.form-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.form-header h1 {
+    margin-right: 20px;
+}
+
+.form-image {
+    max-width: 150px;
+    height: auto;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.form-container form {
+    background: #ada2a2;
+    padding: 30px;
+    text-align: center;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.form-container .form-group {
+    text-align: left;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-container .form-control {
+    width: 100%;
+    height: auto;
+    box-shadow: 4px 0px 6px 0 rgb(46 61 73 / 15%);
+    border-radius: 4px;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #e8e8e8;
+}
+
+.form-container button[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+}
+
+.form-container input[type="email"],
+.form-container input[type="text"],
+.form-container textarea {
+    background-color: #cbc8c8;
+}
+
+@media screen and (max-width: 767px) {
+    .form-container {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+    .form-container .form-control {
+        margin-left: 0;
+    }
+    .form-header {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .form-header h1 {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .form-image {
+        max-width: 100px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    section {
+        font-size: 2rem!important;
+    }
+    .sliderHeading {
+        font-size: 2rem !important;
+    }
+    .sliderSubHeading {
+        font-size: 1rem !important;
+    }
+}
