@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-// import "./NavR.css"
+
 function Navbar() {
   const logo = {
     width: "182px",

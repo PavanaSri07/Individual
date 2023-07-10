@@ -1335,16 +1335,16 @@ We are the multidisciplinary team that turns your concepts into revenue-centric 
         }}
       />
       {/*  */}
-      <footer id="footer" itemScope itemType="https://schema.org/WPFooter">
-        <div className="footer-top">
+      <footer id="footer" itemScope itemType="https://schema.org/WPFooter"  style={{ backgroundColor: '#173a59' }}>
+        <div className="footer-top" style={{ backgroundColor: '#225380' }}>
           <div className="container">
             <div className="row">
               <div className="col-lg-3 col-md-6">
                 <div className="footer-info">
                   <h3 className="mb-0">
                     <img
-                      src="../images/gamay.png"
-                      srcSet="../images/gamay.png"
+                      src="images/gamay.png"
+                      srcSet="images/gamay.png"
                       className="white-logo"
                       alt="logo16"
                       style={{ marginLeft: "-1em", paddingBottom: "20px" }}
@@ -1354,11 +1354,12 @@ We are the multidisciplinary team that turns your concepts into revenue-centric 
                     GAMAYAS Plot No: 1, AP colony, Mallapur, Hyderabad.
                     PIN:-500076.
                     <br />
-                    <strong>Phone:</strong> +917801073175,
+                    <strong>Phone:</strong>
+                    +917801073175,
                     <br />
                     +917801073176
                     <br />
-             
+                    {/* <strong>Email:</strong> info@janbaskdigitaldesign.com<br> */}
                   </p>
                   <div className="social-links mt-3">
                     <a href="#" className="twitter">
@@ -1380,84 +1381,90 @@ We are the multidisciplinary team that turns your concepts into revenue-centric 
                 </div>
               </div>
               <div className="col-lg-2 col-md-6 footer-links">
-                <h4>Company</h4>
-                <ul>
-                  <li>
-                    <i className="fa fa-angle-right" />{" "}
+                <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start',marginLeft: '4em' }}>
+                <h4  style={{ marginBottom: '0.5em' }}>Company</h4>
+                <ul  className="footer-links" style={{ listStyleType: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column' }}>
+                  <li style={{ marginBottom: '0.5em', marginLeft: '0' }}>
+                    <i className="fa fa-angle-right" />
                     <a href="index.html">Home</a>
                   </li>
-                  <li>
-                    <i className="fa fa-angle-right" />{" "}
+                  <li style={{ marginBottom: '0.5em', marginLeft: '0' }}>
+                    <i className="fa fa-angle-right" />
                     <a href="about-us.html">About us</a>
                   </li>
-                  <li>
+                  <li style={{ marginBottom: '0.5em', marginLeft: '0' }}>
                     <i className="fa fa-angle-right" />{" "}
                     <a href="#">Portfolio</a>
                   </li>
-              
-                  <li>
-                    <i className="fa fa-angle-right" />{" "}
+                  {/* <li><i class="fa fa-angle-right"></i> <a href="#">Blogs</a></li> */}
+                  <li style={{ marginBottom: '0.5em', marginLeft: '0' }}>
+                    <i className="fa fa-angle-right" />
                     <a href="contact-us.html">Contact Us</a>
                   </li>
                 </ul>
+                </div>
+                
               </div>
               <div className="col-lg-3 col-md-6 footer-links">
-                <h4>Our Focus Area</h4>
-                <ul>
-                  <li>
-                    <i className="fa fa-angle-right" />{" "}
+                <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start',marginLeft: '4em' }}>
+                <h4 style={{ marginBottom: '0.5em' }}>Our Focus Area</h4>
+                <ul className="footer-links" style={{ listStyleType: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column' }}>
+                  <li  style={{ marginBottom: '0.5em', marginLeft: '0' }}>
+                    <i className="fa fa-angle-right" />
                     <a href="website-design-services.html">Web Design</a>
                   </li>
-                  <li>
-                    <i className="fa fa-angle-right" />{" "}
+                  <li  style={{ marginBottom: '0.5em', marginLeft: '0' }}>
+                    <i className="fa fa-angle-right" />
                     <a href="website-development-services.html">
                       Web Development
                     </a>
                   </li>
-                  <li>
-                    <i className="fa fa-angle-right" />{" "}
+                  <li  style={{ marginBottom: '0.5em', marginLeft: '0' }}>
+                    <i className="fa fa-angle-right" />
                     <a href="mobile-app-development-services.html">
-                      {" "}
                       Mobile Apps Development
                     </a>
                   </li>
-                  <li>
-                    <i className="fa fa-angle-right" />{" "}
+                  <li  style={{ marginBottom: '0.5em', marginLeft: '0' }}>
+                    <i className="fa fa-angle-right" />
                     <a href="Digitalmarketing.html.html">Digital Marketing</a>
                   </li>
-            
+                  {/* <li><i class="fa fa-angle-right"></i> <a href="">Graphic Design</a></li> */}
                 </ul>
+                </div>
+                
               </div>
               <div className="col-lg-4 col-md-6 footer-links">
-                <h4>Industries We Serve</h4>
-                <ul className>
-                  
-                  <li>
-                    {" "}
-                    <i className="fa fa-angle-right" />{" "}
+                <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start',marginLeft: '4em' }}  >
+                <h4 style={{ marginBottom: '0.5em' }}>Industries We Serve</h4>
+                <ul className="footer-links" style={{ listStyleType: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column' }}>
+                  {/* <li> <i class="fa fa-angle-right"></i> <a href="">Non-Profit Industry</a></li> */}
+                  <li style={{ marginBottom: '0.5em', marginLeft: '0' }}>
+                    <i className="fa fa-angle-right" />
                     <a href="it-website-design.html">IT Industry</a>
                   </li>
-                  <li>
-                    {" "}
-                    <i className="fa fa-angle-right" />{" "}
+                  <li style={{ marginBottom: '0.5em', marginLeft: '0' }}>
+                    <i className="fa fa-angle-right" />
                     <a href="healthcare-website-design.html">
                       Healthcare Industry
                     </a>
                   </li>
-                  <li>
-                    {" "}
-                    <i className="fa fa-angle-right" />{" "}
+                  <li style={{ marginBottom: '0.5em', marginLeft: '0' }}>
+                    <i className="fa fa-angle-right" />
                     <a href="manufacturing-website-design.html">
                       Manufacturing Industry
                     </a>
                   </li>
-                  <li>
-                    <i className="fa fa-angle-right" />{" "}
+                  <li style={{ marginBottom: '0.5em', marginLeft: '0' }}>
+                    <i className="fa fa-angle-right" />
                     <a href="financial-services-website-design.html">
                       Financial Services Industry
                     </a>
                   </li>
                 </ul>
+
+                </div>
+                
               </div>
             </div>
           </div>
